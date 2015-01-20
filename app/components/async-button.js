@@ -10,6 +10,7 @@ export default Ember.Component.extend({
 
   type: 'submit',
   disabled: Ember.computed.equal('textState','pending'),
+  isPending: Ember.computed.alias('pending'),
 
   click: function() {
     var _this = this;
